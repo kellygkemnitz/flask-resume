@@ -8,6 +8,6 @@ WORKDIR /flask-resume-docker
 
 RUN pip install -r requirements.txt
 
-EXPOSE 8000
+EXPOSE 80
 
-CMD ["gunicorn", "-b", "0.0.0.0:8000", "-w", "4", "app:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:80", "-w", "4", "app:app"]
